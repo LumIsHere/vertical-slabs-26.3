@@ -1,23 +1,25 @@
 {
-	"schemaVersion": 1,
-	"id": "vertical_slabs",
-	"version": "${version}",
-	"name": "Vertical Slabs",
-	"description": "This is an example description! Tell everyone what your mod is about!",
-	"authors": [
-		"Me!"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
+    "schemaVersion": 1,
+    "id": "vertical_slabs",
+    "version": "${version}",
+    "name": "Vertical Slabs",
+    "description": "Adds Vertical Slabs to Minecraft!",
+    "authors": [
+    "Lum"
+    ],
+    "contact": {
+    	"sources": "https://github.com/LumIsHere/vertical-slabs-26.3"
+    },
 	"license": "CC0-1.0",
 	"icon": "assets/vertical_slabs/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"lum.verticle_slabs.VerticalSlabs"
-		]
+			"lum.vertical_slabs.VerticalSlabs"
+		],
+        "fabric-datagen": [
+            "lum.vertical_slabs.VerticalSlabsDataGenerator"
+        ]
 	},
 	"mixins": [
 		"vertical_slabs.mixins.json"
