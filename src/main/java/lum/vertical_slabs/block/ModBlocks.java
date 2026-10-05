@@ -17,6 +17,8 @@ import java.util.function.Function;
 public class ModBlocks {
     public static final Block PLACEHOLDER = registerBlock("placeholder_block",
             properties -> new Block(properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final Block STONE_VERTICAL_SLAB = registerBlock("stone_vertical_slab",
+            properties -> new VerticalSlabBlock(properties.strength(1.5F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(VerticalSlabs.MOD_ID, name))));
